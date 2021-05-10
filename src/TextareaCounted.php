@@ -40,6 +40,7 @@ class TextareaCounted extends FieldCounted
     {
         return array_merge(parent::jsonSerialize(), [
             'rows' => $this->rows,
+			'helpText' => $this->getHelpText(),
         ]);
     }
 }
